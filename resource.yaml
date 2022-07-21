@@ -1,0 +1,13 @@
+---
+apiVersion: accelerator.apps.tanzu.vmware.com/v1alpha1
+kind: Accelerator
+metadata:
+  labels:
+    accelerator.apps.tanzu.vmware.com/category: test  
+  name: my-hello-world
+spec:
+  displayName: My Hello World
+  git:
+    url: https://github.com/trisberg/my.test.acc.git
+    ref:
+      branch: main
